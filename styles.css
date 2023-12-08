@@ -10,6 +10,7 @@
 
 body {
     background-color: #dad6d3;
+    overflow-x: hidden;
 }
 
 .content {
@@ -18,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 7%;
+    margin-bottom: 7rem;
 }
 
 nav {
@@ -34,18 +35,16 @@ nav a {
 
 .list-links {
     display: flex;
-    justify-content: center;
-    width: 420px;
+    width: 100%;
     margin-top: 2rem;
+
 }
 
 .list-links li{
     margin: .5rem;
     list-style-type: none;
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 
@@ -74,11 +73,12 @@ main {
 }
 
 .aviao img{
-    height: 400px;
+    height: auto;
+    max-width: 100%;
 }
 
 .historia {
-    height: 450px;
+    height: auto;
     width: 100%;
     font-size: 28px;
     margin: 5rem 0rem;
@@ -92,9 +92,9 @@ main {
 
 .jatos-container{
     box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.75);
-    height: 600px;
-    width: 800px;
-    margin: 3rem;
+    height: auto;
+    width: 40%;
+    margin: 3rem auto;
     animation: fade linear;
     animation-timeline: view();
 }
@@ -104,7 +104,7 @@ main {
 }
 
 .jatos-container img{
-    max-height: 75%;
+    height: auto;
     max-width: 100%;
 }
 
@@ -138,5 +138,31 @@ footer i:hover {
     }
     50%{
         opacity: 1;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .list-links {
+        padding: 0 1rem;
+    }
+
+    .list-links li a {
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    .brand {
+        font-size: 40px;
+    }
+
+    .historia p {
+        padding: 1rem;
+        font-size: 16px;
+    }
+
+    .jatos-container {
+        margin: 3rem auto;
+        width: 100%;
     }
 }
