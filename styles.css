@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #dad6d3;
+}
+
+.content {
+    background-color: #0916A3;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.list-links {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    margin-top: 2rem;
+}
+
+.list-links li{
+    margin: .5rem;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list-links li a {
+    color: #ff4500;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.list-links li a:hover {
+    color: #fff;
+}
+
+.brand{
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
+}
+
+.aviao img{
+    height: 400px;
+}
+
+.historia {
+    height: 450px;
+    width: 100%;
+    font-size: 28px;
+    margin: 5rem 0rem;
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+.historia p {
+    padding: 1rem 10rem;
+}
+
+.jatos-container{
+    box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.75);
+    height: 600px;
+    width: 800px;
+    margin: 3rem;
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+.jatos-container p, h4 {
+    padding: .4rem
+}
+
+.jatos-container img{
+    max-height: 75%;
+    max-width: 100%;
+}
+
+footer {
+    border: 1px solid green;
+    height: 250px;
+    background-color: #0916A3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 36px;
+    padding: 1rem;
+    color: #ff4500;
+}
+
+footer i:hover {
+    color: #fff;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
