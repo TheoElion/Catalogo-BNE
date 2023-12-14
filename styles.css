@@ -109,7 +109,6 @@ main {
 }
 
 footer {
-    border: 1px solid green;
     height: 250px;
     background-color: #0916A3;
     display: flex;
